@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+$Softblue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+$very-dark-blue-main-bg: hsl(217, 54%, 11%);
+$very-dark-blue-card-bg: hsl(216, 50%, 16%);
+$very-dark-blue-line: hsl(215, 32%, 27%);
+$white: hsl(0, 0%, 100%);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+
+    @media (max-width: 375px) {
+        font-size: 50%;
+    }
+}
+
+
+body {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-color: $very-dark-blue-main-bg;
+}
+
+
+.card {
+    width: 29rem;
+    height: 52rem;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    background-color: $very-dark-blue-card-bg;
+
+
+
+    img {
+        width: 26rem;
+        height: 26rem;
+        display: block;
+        margin: 2rem auto;
+        border-radius: .8rem;
+        -webkit-border-radius: .8rem;
+        -moz-border-radius: .8rem;
+        -ms-border-radius: .8rem;
+        -o-border-radius: .8rem;
+    }
+
+
+    .content {
+        padding: 0rem 1.7rem;
+        position: relative;
+
+        h4 {
+            color: $white ;
+            text-transform: capitalize;
+            font-size: 1.8rem;
+        }
+
+        p {
+            color: $Softblue;
+            margin: .9rem 0 .5rem 0;
+            line-height: 1.6;
+            font-size: 1.6rem;
+            display: block;
+
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid $very-dark-blue-line;
+
+            .colored {
+                color: $Cyan ;
+            }
+
+            small {
+                display: flex;
+                align-items: center;
+                gap: .5rem;
+                color: $Softblue;
+
+                img {
+                    width: .9rem;
+                    height: 1.5rem;
+                    display: block;
+                }
+            }
+        }
+
+        .avatar {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 1.7rem;
+            gap: 1.3rem;
+            img {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                -ms-border-radius: 50%;
+                -o-border-radius: 50%;
+                border: 1px solid $white ;
+            }
+
+            p {
+                color : $Softblue ;
+                font-size: 1.4rem;
+                span {
+                    color : $white ;
+                    margin-left  : .3rem;
+                    text-transform: capitalize;
+                }
+            }
+        }
+
+    }
+
+
+
+}
